@@ -18,7 +18,7 @@ namespace DnsShopUITests
         {
             driver = new WebDriverManager().InitDriver(browser).GetDriver();
             driver.Manage().Window.Maximize();
-            //driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
             driver.Navigate().GoToUrl(BasePage.BaseUrl);
         }
 

@@ -18,15 +18,12 @@ namespace DnsShopUITests.Helpers
                     break;
 
                 case Browser.FIREFOX:
+
                     /*
                     FirefoxDriverService firefoxDriverService = FirefoxDriverService.CreateDefaultService(driverPath);
                     firefoxDriverService.Host = "::1";
-                    driver = new FirefoxDriver(firefoxDriverService);*/
-
-                    /*
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.PageLoadStrategy = PageLoadStrategy.Eager;*/
-
+                    driver = new FirefoxDriver(firefoxDriverService);
+                    */
 
                     driver = new FirefoxDriver(driverPath);
                     break;

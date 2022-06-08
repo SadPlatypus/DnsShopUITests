@@ -4,7 +4,7 @@ using DnsShopUITests.Pages;
 namespace DnsShopUITests
 {
     [TestFixture(Browser.CHROME)]
-    //[TestFixture(Browser.FIREFOX)]
+    [TestFixture(Browser.FIREFOX)]
     [TestFixture(Browser.OPERA)]
     [Parallelizable(ParallelScope.Fixtures)]
     internal class CitySelectionTests : BaseTest
@@ -43,8 +43,6 @@ namespace DnsShopUITests
                 .GetGeoLocationCityName();
 
             Assert.That(actualCityName, Is.EqualTo(expectedCityName));
-
-            Console.WriteLine(actualCityName);
         }
 
         [Test, Order(2)]
@@ -64,8 +62,6 @@ namespace DnsShopUITests
                .GetGeoLocationCityName();
 
             Assert.That(actualBigCityName, Is.EqualTo(expectedBigCityName));
-
-            Console.WriteLine(actualBigCityName);
         }
 
         [Test, Order(3)]
@@ -87,8 +83,6 @@ namespace DnsShopUITests
                .GetGeoLocationCityName();
 
             Assert.That(actualCityName, Is.EqualTo(expectedCityName));
-
-            Console.WriteLine(actualCityName);
         }
 
         [TearDown]
