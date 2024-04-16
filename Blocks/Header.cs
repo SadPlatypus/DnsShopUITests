@@ -6,8 +6,8 @@ namespace DnsShopUITests.Blocks
     {
         public Header(IWebDriver driver) : base(driver) { }
 
-        private readonly By GeoLocationButtonLocator = By.CssSelector("div.city-select");
-        private readonly By GeoLocationCityNameLocator = By.CssSelector("p.city-select__text");
+        private readonly By GeoLocationButtonLocator = By.CssSelector("div.city-select_cKY");
+        private readonly By GeoLocationCityNameLocator = By.CssSelector("span.city-select__text_90n");
 
         public Header ClickByGeoLocationButton()
         {
