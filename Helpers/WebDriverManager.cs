@@ -17,7 +17,7 @@ namespace DnsShopUITests.Helpers
                     driver = new ChromeDriver(driverPath);
                     break;
 
-                case Browser.FIREFOX:
+                //case Browser.FIREFOX:
 
                     /*
                     FirefoxDriverService firefoxDriverService = FirefoxDriverService.CreateDefaultService(driverPath);
@@ -25,12 +25,12 @@ namespace DnsShopUITests.Helpers
                     driver = new FirefoxDriver(firefoxDriverService);
                     */
 
-                    driver = new FirefoxDriver(driverPath);
-                    break;
+                    //driver = new FirefoxDriver(driverPath);
+                    //break;
 
-                case Browser.OPERA:
-                    driver = new OperaDriver(driverPath);
-                    break;
+                //case Browser.OPERA:
+                    //driver = new OperaDriver(driverPath);
+                    //break;
 
                 default:
                     throw new NotFoundException("Некорректное имя браузера!");
