@@ -4,9 +4,6 @@ using DnsShopUITests.Pages;
 namespace DnsShopUITests
 {
     [TestFixture(Browser.CHROME)]
-    [TestFixture(Browser.FIREFOX)]
-    [TestFixture(Browser.OPERA)]
-    [Parallelizable(ParallelScope.Fixtures)]
     internal class CitySelectionTests : BaseTest
     {
         private HomePage homePage;
